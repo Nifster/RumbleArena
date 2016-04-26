@@ -1,0 +1,223 @@
+fileFormatVersion: 2
+guid: 0aef6ce83302bf4478355a080ad3bacf
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: agumon_walk.anim_0
+    21300002: agumon_walk.anim_1
+    21300004: agumon_walk.anim_2
+    21300006: agumon_walk.anim_3
+    21300008: agumon_walk.anim_4
+    21300010: agumon_walk.anim_5
+    21300012: agumon_walk.anim_6
+    21300014: agumon_walk.anim_7
+    21300016: agumon_walk.anim_8
+    21300018: agumon_walk.anim_9
+    21300020: agumon_walk.anim_10
+    21300022: agumon_walk.anim_11
+    21300024: agumon_walk.anim_12
+    21300026: agumon_walk.anim_13
+    21300028: agumon_walk.anim_14
+    21300030: agumon_walk.anim_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: agumon_walk.anim_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 51
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: agumon_walk.anim_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 51
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: agumon_walk.anim_2
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 51
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: agumon_walk.anim_3
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 51
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: agumon_walk.anim_4
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 51
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: agumon_walk.anim_5
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 51
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: agumon_walk.anim_6
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 51
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: agumon_walk.anim_7
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 51
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: agumon_walk.anim_8
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 51
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: agumon_walk.anim_9
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 51
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: agumon_walk.anim_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: agumon_walk.anim_11
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: agumon_walk.anim_12
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: agumon_walk.anim_13
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 1
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: agumon_walk.anim_14
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 1
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: agumon_walk.anim_15
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 1
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

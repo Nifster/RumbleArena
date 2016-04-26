@@ -1,0 +1,48 @@
+  {
+    "EvolutionTree":[
+      {
+        "ID": 0,
+        "Name": "Agumon",
+        "Evolutions": [
+          {
+            "ID":1,
+            "Name": "Greymon",
+            "Attack":20,
+            "Defense":20,
+            "Attribute":0,
+            "Family":0
+          },
+          {
+            "ID":2,
+            "Name": "Tyrannomon",
+            "Attack":30,
+            "Defense":15,
+            "Attribute":0,
+            "Family":0
+          }
+        ]
+      },
+      {
+        "ID": 3,
+        "Name": "Gabumon",
+        "Evolutions": [
+          {
+            "ID":4,
+            "Name": "Garurumon",
+            "Attack":20,
+            "Defense":20,
+            "Attribute":1,
+            "Family":2
+          },
+          {
+            "ID":5,
+            "Name": "Frigimon",
+            "Attack":30,
+            "Defense":15,
+            "Attribute":0,
+            "Family":2
+          }
+        ]
+      }
+    ]
+  }

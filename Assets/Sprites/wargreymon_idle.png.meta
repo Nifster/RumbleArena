@@ -1,0 +1,203 @@
+fileFormatVersion: 2
+guid: b5eec62bc3026a84f812443a09ee136b
+timeCreated: 1452254032
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: wargreymon_idle_0
+    21300002: wargreymon_idle_1
+    21300004: wargreymon_idle_2
+    21300006: wargreymon_idle_3
+    21300008: wargreymon_idle_4
+    21300010: wargreymon_idle_5
+    21300012: wargreymon_idle_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: wargreymon_idle_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 54.42857
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.5, y: 25}
+        - {x: -17.5, y: 24}
+        - {x: -26.5, y: 16}
+        - {x: -26.5, y: -20}
+        - {x: -25.5, y: -24}
+        - {x: 14.5, y: -24}
+        - {x: 27.5, y: -13}
+        - {x: 27.5, y: 7}
+        - {x: 19.5, y: 25}
+    - name: wargreymon_idle_1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 0
+        width: 54.42857
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15.5, y: 24}
+        - {x: -22.5, y: 24}
+        - {x: -27.5, y: 10}
+        - {x: -27.5, y: -15}
+        - {x: -22.5, y: -24}
+        - {x: 1.5, y: -24}
+        - {x: 13.5, y: -23}
+        - {x: 24.5, y: -20}
+        - {x: 27.5, y: -13}
+        - {x: 27.5, y: 16}
+    - name: wargreymon_idle_2
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 0
+        width: 54.42857
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16.5, y: 20}
+        - {x: 13.5, y: 23}
+        - {x: -16.5, y: 23}
+        - {x: -17.5, y: 21}
+        - {x: -27.5, y: 9}
+        - {x: -27.5, y: -24}
+        - {x: 21.5, y: -24}
+        - {x: 27.5, y: -16}
+        - {x: 27.5, y: 3}
+        - {x: 24.5, y: 4}
+    - name: wargreymon_idle_3
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 0
+        width: 54.42857
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16.5, y: 20}
+        - {x: 13.5, y: 22}
+        - {x: -21.5, y: 22}
+        - {x: -27.5, y: 8}
+        - {x: -27.5, y: -24}
+        - {x: 18.5, y: -24}
+        - {x: 27.5, y: -12}
+        - {x: 27.5, y: 3}
+        - {x: 24.5, y: 4}
+    - name: wargreymon_idle_4
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 0
+        width: 54.42857
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: 22}
+        - {x: -27.5, y: 19}
+        - {x: -27.5, y: -17}
+        - {x: -23.5, y: -24}
+        - {x: 24.5, y: -24}
+        - {x: 27.5, y: -21}
+        - {x: 27.5, y: 10}
+        - {x: 21.5, y: 22}
+    - name: wargreymon_idle_5
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 0
+        width: 54.42857
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 24}
+        - {x: -27.5, y: 9}
+        - {x: -27.5, y: -15}
+        - {x: -26.5, y: -23}
+        - {x: -23.5, y: -24}
+        - {x: 25.5, y: -24}
+        - {x: 27.5, y: -21}
+        - {x: 27.5, y: 10}
+        - {x: 17.5, y: 24}
+    - name: wargreymon_idle_6
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 0
+        width: 54.42857
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.5, y: 25}
+        - {x: -27.5, y: 11}
+        - {x: -27.5, y: -24}
+        - {x: 18.5, y: -24}
+        - {x: 27.5, y: -14}
+        - {x: 27.5, y: 11}
+        - {x: 16.5, y: 25}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
