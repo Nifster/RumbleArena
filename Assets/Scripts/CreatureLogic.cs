@@ -9,6 +9,7 @@ public class CreatureLogic : MonoBehaviour {
 	[Header("Digi Attributes")]
 	public string m_name;
 	public float m_hunger;
+	public float m_attention;
 	public float m_experience;
 	public int m_lifeCycleCount;
 	public float m_attackStat;
@@ -16,6 +17,10 @@ public class CreatureLogic : MonoBehaviour {
 	public float m_healthCurrent;
 	public float m_healthMax;
 	public int numOfVisibleAttributes;
+
+	[Header("Button Values")]
+	public int feedValue = 5;
+
 
 	bool isFacingRight = true;
 	Vector2 lastPos;
@@ -70,14 +75,15 @@ public class CreatureLogic : MonoBehaviour {
 		myImage = this.GetComponent<Image>();
 		myAnimController = this.GetComponent<AnimationController>();
 		myEvolutionController = this.GetComponent<EvolutionController>();
-		ExpRequirements = new int[6]{10,20,30,40,50,60};
-		uiValues = uiValues = new List<string>(){m_name,m_hunger.ToString(),m_experience.ToString()};
+		ExpRequirements = new int[6]{10,20,30,40,50,60};//to be defined in json in future
+		uiValues = new List<string>(){m_name,m_hunger.ToString(),m_experience.ToString()};
+
 
 	}
 	
 	// Update is called once per frame
 	void Update(){
-		uiValues = uiValues = new List<string>(){m_name,m_hunger.ToString(),m_experience.ToString()};
+		uiValues = new List<string>(){m_name,m_hunger.ToString(),m_experience.ToString()};
 
 		if(!myTimers.isHatched){
 			myMovement.ResetPosition();
@@ -87,17 +93,24 @@ public class CreatureLogic : MonoBehaviour {
 				ResetAttributes ();
 				myTimers.m_resetAttributes = false;
 			}
+			return;
 
-		}else{
-			myTimers.MovementTimer();
-			myAnimController.SwitchAnimation(myAnimator,"isHatched",myTimers.isHatched);
-			myAnimController.SwitchAnimation(myAnimator,"movementCheck",myTimers.movementCheck);
-			if(myTimers.movementCheck){
-				myMovement.RandomMovement();
-			}
-			myMovement.TouchMovement();
-			myTimers.LifetimeTick();
 		}
+
+		//once hatched
+		myTimers.MovementTimer();
+		myAnimController.SwitchAnimation(myAnimator,"isHatched",myTimers.isHatched);
+		myAnimController.SwitchAnimation(myAnimator,"movementCheck",myTimers.movementCheck);
+		if(myTimers.movementCheck){
+			myMovement.RandomMovement();
+		}
+		myMovement.TouchMovement();
+		myTimers.LifetimeTick();
+		//stats update
+		m_hunger = myTimers.HungerDecay(m_hunger);
+
+		//Debug.Log ("Attention: " + m_attention);
+
 
 		//checks which direction pet is moving and flips sprite accordingly
 		if((this.transform.position.x > lastPos.x) && !isFacingRight){
@@ -115,8 +128,6 @@ public class CreatureLogic : MonoBehaviour {
 		}
 
 		lastPos = this.transform.position;
-
-
 		
 	}
 
@@ -145,5 +156,11 @@ public class CreatureLogic : MonoBehaviour {
 			myAnimator.runtimeAnimatorController = myAnimController.animatorList[evolvedPet["ID"].AsInt];
 		}
 	}
+
+	public void Feed(){
+		m_hunger += feedValue;
+		m_hunger = Mathf.Clamp (m_hunger, 0, 100);
+	}
+
 
 }
