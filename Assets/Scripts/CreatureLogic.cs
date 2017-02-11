@@ -143,17 +143,21 @@ public class CreatureLogic : MonoBehaviour {
 
 
 	public void AddExp(){
-		int addAmount = 10;
-		m_experience += addAmount;
-		if(m_experience >= ExpRequirements[(int)m_digiStage]){
-			JSONNode evolvedPet = myEvolutionController.CheckBranchEvolution(m_name,m_attackStat,m_defenseStat,m_lifeCycleCount);
-			m_name = evolvedPet["Name"];
-			m_digiAttribute = (Attribute)evolvedPet["Attribute"].AsInt;
-			m_digiFamily = (Family)evolvedPet["Family"].AsInt;
-			m_digiStage++;
-			//TODO: Replace testAnimator with index based array for animatorcontrollers
-			//to be replaced by ID of evolution
-			myAnimator.runtimeAnimatorController = myAnimController.animatorList[evolvedPet["ID"].AsInt];
+		if (myTimers.isHatched) {
+			int addAmount = 10;
+			m_experience += addAmount;
+			if (m_experience >= ExpRequirements [(int)m_digiStage]) {
+				JSONNode evolvedPet = myEvolutionController.CheckBranchEvolution (m_name, m_attackStat, m_defenseStat, m_lifeCycleCount);
+				if(evolvedPet != null){
+					m_name = evolvedPet ["Name"];
+					m_digiAttribute = (Attribute)evolvedPet ["Attribute"].AsInt;
+					m_digiFamily = (Family)evolvedPet ["Family"].AsInt;
+					m_digiStage++;
+					//TODO: Replace testAnimator with index based array for animatorcontrollers
+					//to be replaced by ID of evolution
+					//myAnimator.runtimeAnimatorController = myAnimController.animatorList [evolvedPet ["ID"].AsInt];
+				}
+			}
 		}
 	}
 
