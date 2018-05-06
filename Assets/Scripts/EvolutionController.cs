@@ -48,6 +48,7 @@ public class EvolutionController : MonoBehaviour {
 				for(int j=0; j<petListJSON[i]["Evolutions"].Count;j++){
 					if(attackStat >= petListJSON[i]["Evolutions"][j]["Attack"].AsFloat){
 						if(defStat >= petListJSON[i]["Evolutions"][j]["Defense"].AsFloat){
+							//some logic error here in terms of deciding evolution in terms of >= a stat
 							return petListJSON[i]["Evolutions"][j];
 						}
 					}

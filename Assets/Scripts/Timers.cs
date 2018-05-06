@@ -22,6 +22,10 @@ public class Timers : MonoBehaviour {
 	public float higherPauseDurationLimit;
 	public bool movementCheck;
 
+	[Header("Stats Decay Settings")]
+	public float hungerDecay;
+	public float hungerMax;
+
 	// Use this for initialization
 	void Start(){
 
@@ -75,5 +79,15 @@ public class Timers : MonoBehaviour {
 			movementTimer = Time.time + Random.Range(lowerPauseDurationLimit,higherPauseDurationLimit);
 		}
 	}
-	
+
+	//TODO: abstract this function to be used for any stats decay with differing rates
+	public float HungerDecay(float hungerVal){
+		hungerDecay -= Time.deltaTime;
+		if (hungerDecay <= 0) {
+			hungerVal--;
+			hungerDecay = hungerMax;
+		}
+
+		return hungerVal;
+	}
 }
